@@ -180,7 +180,7 @@ def train():
 
             if iter % opt.steps_til_ckpt == 0:
                 util.custom_save(model, os.path.join(ckpt_dir, 'epoch_%04d_iter_%06d.pth' % (epoch, iter)),
-                                 discriminator=None, optimizer=optimizer)
+                                 discriminator=None)
 
         epoch += 1
 
